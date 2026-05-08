@@ -521,7 +521,7 @@ erDiagram
 [Data Analyst]
 
 - 🔗 [www.linkedin.com/in/eritosin-salami]
-- 💼 [Portfolio or GitHub profile URL]
+- 💼 [https://github.com/EritosinSalami]
 - 📧 [salamieritosinlearn@gmail.com]
 
 ---

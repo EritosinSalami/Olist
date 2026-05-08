@@ -517,12 +517,12 @@ erDiagram
 
 ## 14. Author
 
-**[Your Name]**
-[Your role or title - current or target]
+**[Eritosin Salami]**
+[Data Analyst]
 
-- 🔗 [LinkedIn URL]
+- 🔗 [www.linkedin.com/in/eritosin-salami]
 - 💼 [Portfolio or GitHub profile URL]
-- 📧 [Email - optional]
+- 📧 [salamieritosinlearn@gmail.com]
 
 ---
 

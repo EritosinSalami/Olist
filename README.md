@@ -193,7 +193,7 @@ Specifically:
 -->
 
 ### Option A - Embedded Image
-![ERD Diagram](visuals/erd.png)
+(https://github.com/EritosinSalami/Olist/blob/main/visuals/ERD.png)
 *[Brief caption: e.g., "Three-table schema - orders, customers, and products joined on shared IDs."]*
 
 ---

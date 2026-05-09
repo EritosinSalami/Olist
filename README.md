@@ -66,21 +66,21 @@ Specifically:
 
 | Dimension | Details |
 |-----------|---------|
-| **In Scope** | Olist Brazilian E‑commerce Dataset (public), Analysis covers revenue, customer behaviour, logistics and product category performance |
-| **Out of Scope** | Sellers' profitability, Customer demographics and marketing spend data were excluded |
+| **In Scope** | Olist Brazilian E‑commerce Dataset (public), Analysis covers Revenue, Customer behaviour, Logistics and Product category performance |
+| **Out of Scope** | Sellers' profitability, Customer demographics and Marketing spend data were excluded |
 | **Time Period** | Sep 2016 - Oct 2018 |
-| **Granularity** | [order_items (each product in an order), reviews (each review). - **Order‑level:** orders (each order), payments (each payment method). - **Customer‑level:** customers (for RFM and churn). - ** monthly aggregates** for time‑series charts (revenue trends, growth rates). |
+| **Granularity** | [order_items (each product in an order), reviews (each review).  **Order‑level:** orders (each order), payments (each payment method). **Customer‑level:** customers (for RFM and churn).  **monthly aggregates** for time‑series charts (revenue trends, growth rates). |
 
 ### Tools & Technologies
 
 | Category | Tool(s) Used |
 |----------|-------------|
-| Data Storage | [CSV files] |
-| Data Processing | [SQL, Excel] |
-| Analysis | [SQL queries] |
-| Visualization | [Power BI] |
-| Version Control | [GitHub] |
-| Documentation | [Markdown] |
+| Data Storage | CSV files |
+| Data Processing | SQL, Excel |
+| Analysis | SQL queries |
+| Visualization | Power BI |
+| Version Control | GitHub |
+| Documentation | Markdown |
 
 ---
 

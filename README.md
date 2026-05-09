@@ -64,16 +64,6 @@ Specifically:
 
 ### Scope
 
-<!--
-  WHAT GOOD LOOKS LIKE:
-  In Scope: "Transaction-level data for Regions A–E, Jan 2023–Jun 2024.
-             Analysis covers revenue, return rates, and product category performance."
-  Out of Scope: "Customer demographics and marketing spend data were excluded -
-                 demographic data was incomplete for two regions, and marketing
-                 data sits in a separate system outside this engagement."
-
-
-
 | Dimension | Details |
 |-----------|---------|
 | **In Scope** | Olist Brazilian E‑commerce Dataset (public), Analysis covers revenue, customer behaviour, logistics and product category performance |

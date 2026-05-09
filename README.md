@@ -54,28 +54,9 @@ Specifically:
 
 ## 2. Objectives
 
-<!--
-  Write objectives that are specific enough to succeed or fail.
-  Use action-oriented verbs: Identify, Determine, Quantify, Build, Evaluate.
-
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Determine whether customer churn rate correlates with support ticket volume."
-  ✅ "Identify the top three revenue-driving product categories across all regions."
-  ✅ "Build a reproducible pipeline that ingests and cleans daily sales exports."
-
-  WHAT TO AVOID:
-  ❌ "Explore the data."
-  ❌ "Gain insights."
-  ❌ "Understand trends."
-  (These can't fail - which means they can't succeed either.)
--->
-
-- **Primary Objective:** [The main thing you set out to do]
-- **Secondary Objective 1:** [Supporting goal]
-- **Secondary Objective 2:** [Supporting goal]
-- **Secondary Objective 3:** [Remove if not applicable]
-
-> 💡 *Every analysis decision in this project traces back to one of these objectives.*
+- **Primary Objective:** To identify the key drivers of revenue, customer churn, and logistics inefficiencies in the Olist marketplace
+- **Secondary Objective 1:** To quantify sales performance
+- **Secondary Objective 2:** To evaluate customer retention and logistics effectiveness
 
 ---
 
@@ -91,34 +72,25 @@ Specifically:
                  demographic data was incomplete for two regions, and marketing
                  data sits in a separate system outside this engagement."
 
-  WHAT TO AVOID:
-  ❌ Leaving Out of Scope blank. This is the section that protects your credibility.
-     If you don't define the fence, reviewers assume you missed things.
--->
+
 
 | Dimension | Details |
 |-----------|---------|
-| **In Scope** | [What is included - data sources, time periods, segments] |
-| **Out of Scope** | [What you explicitly excluded - and a brief reason why] |
-| **Time Period** | [Date range of the data or the project itself] |
-| **Granularity** | [Unit of analysis - row-level, daily aggregates, per-user, etc.] |
+| **In Scope** | Olist Brazilian E‑commerce Dataset (public), Analysis covers revenue, customer behaviour, logistics and product category performance |
+| **Out of Scope** | Sellers' profitability, Customer demographics and marketing spend data were excluded |
+| **Time Period** | Sep 2016 - Oct 2018 |
+| **Granularity** | [order_items (each product in an order), reviews (each review). - **Order‑level:** orders (each order), payments (each payment method). - **Customer‑level:** customers (for RFM and churn). - ** monthly aggregates** for time‑series charts (revenue trends, growth rates). |
 
 ### Tools & Technologies
 
-<!--
-  List only what you actually used on this project.
-  This is not your skills section - it's the project's technical context.
--->
-
 | Category | Tool(s) Used |
 |----------|-------------|
-| Data Storage | [e.g., PostgreSQL, CSV files, BigQuery, S3] |
-| Data Processing | [e.g., Python, R, SQL, Excel, dbt] |
-| Analysis | [e.g., pandas, dplyr, custom SQL queries] |
-| Visualization | [e.g., Matplotlib, Tableau, Power BI, Looker] |
-| Version Control | [e.g., Git / GitHub] |
-| Documentation | [e.g., Markdown, Notion] |
-| Other | [Any additional tools] |
+| Data Storage | [CSV files] |
+| Data Processing | [SQL, Excel] |
+| Analysis | [SQL queries] |
+| Visualization | [Power BI] |
+| Version Control | [GitHub] |
+| Documentation | [Markdown] |
 
 ---
 

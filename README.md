@@ -82,6 +82,8 @@ Specifically:
 | Version Control | GitHub |
 | Documentation | Markdown |
 
+---
+
 ## 5. Data Workflow
 
 Data Source
@@ -135,85 +137,40 @@ Visualisation & Reporting
   - **Executable DAX measures** (ready to copy into any Power BI model).  
   - **This documentation** – complete pipeline, findings, and recommendations.
 
+---
+
 ## 7. ERD - Entity Relationship Diagram
 
 (https://github.com/EritosinSalami/Olist/blob/main/visuals/ERD.png)
 
 **Core schema of the Olist dataset** – orders as the central fact table connected to customers, payments, reviews, and order items, which join to products and sellers. Geolocation links to customers and sellers via zip codes. Marketing leads join to closed deals.
 
-## 8. Analysis & Metrics
-
-<!--
-  Explain what you measured and how - before you share what you found.
-
-  WHAT GOOD LOOKS LIKE:
-  Metric: "Customer Return Rate"
-  Definition: "Number of transactions flagged as returns divided by total
-               transactions, calculated at product-category and regional grain."
-  Why It Matters: "Return rate - not sales volume - was hypothesised to
-                  explain regional revenue gaps. This metric tests that hypothesis."
-
-  WHAT TO AVOID:
-  ❌ Defining a metric only in code: SUM(returns) / COUNT(transaction_id)
-     That's an implementation. Write the plain-language definition here.
-     Both belong in your project - the definition in the README,
-     the implementation in the code.
--->
-
-### Analytical Approach
-
-[Describe how you approached the analysis. Were you exploring patterns? Testing a hypothesis? Building and validating a pipeline? Be honest about your method - exploratory work is valid, just call it that.]
-
-### Key Metrics Defined
-
-| Metric | Plain-Language Definition | Why It Matters |
-|--------|--------------------------|----------------|
-| `[Metric 1]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 2]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 3]` | [What it measures, in one sentence] | [What decision or question it answers] |
-
-### Methods Used
-
-- [e.g., Descriptive statistics - distribution, central tendency, outlier detection]
-- [e.g., Trend analysis across [time period]]
-- [e.g., Segmentation / group comparison by [dimension]]
-- [e.g., Correlation analysis between [variable A] and [variable B]]
-- [e.g., SQL window functions for [specific aggregation]]
-- [e.g., Custom aggregation or transformation logic in [tool]]
-
 ---
 
 ## 9. Key Insights
 
-<!--
-  Findings + implications. Not just what happened - what it means.
+**Insight 1: Revenue is volume‑driven, not price‑driven – most products are low‑price, low‑volume.**
+**Findings:** A scatter plot of price vs. quantity (bubble size = total revenue) showed that the vast majority of products cluster in the bottom‑left quadrant (low price, low volume). Only a handful of products drive revenue through high volume (bottom‑right) or high price (top‑left). The top 10 products by revenue and units sold account for a disproportionate share of sales.
 
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Return rates, not sales volume, explain Region A's underperformance.
-      Region A's return rate on home goods was 34% - more than double the
-      company average. Revenue was not lost at the point of sale; it was
-      lost post-sale through refunds. This points to a fulfilment or
-      product quality issue specific to that region, not a demand problem."
+**Meaning:** Olist’s catalog is dominated by slow‑moving, low‑value items. The business relies on a few “hero” products. This creates vulnerability: if those products face stockouts or competition, overall revenue could drop significantly. Rationalising the portfolio, discontinue or discount bottom‑left products, promote heavy‑hitters, and experiment with bundling to move volume.
 
-  WHAT TO AVOID:
-  ❌ "Region A had lower revenue than other regions in Q4."
-     (That's an observation. It describes what happened.
-      An insight says what it means and where to look next.)
 
-  Aim for 3–6 insights. Quality over quantity.
--->
+**Insight 2: 90% of customers never return, zero repeat purchases, over‑estimated delivery days and geographic concentration.**
+**Findings:** Churn rate is 90% (customers with no purchase in the last 90 days). All customers are one‑time buyers. Cancellations in Sao Paulo (the largest market) are strongly correlated with estimated delivery days being far too high, even when the seller is geographically close. Scatter plot of distance (km) vs. estimated delivery days shows a cluster of canceled orders at short distance (<500 km) with high estimates (>15 days).
 
-**Insight 1: [Short descriptive headline]**
-[What you found + what it suggests. One short paragraph.]
+**Meaning:** The delivery estimation algorithm is broken for short distances. Customers trust the platform but are forced to cancel when they see unrealistic long promises. The lack of repeat purchases also signals no loyalty programme, no post‑purchase engagement, and no incentive to return. Fixing the estimate logic (e.g., reduce to 3‑5 days for short distances) could recover a significant portion of lost revenue and potentially improve retention.
 
-**Insight 2: [Short descriptive headline]**
-[What you found + what it suggests.]
 
-**Insight 3: [Short descriptive headline]**
-[What you found + what it suggests.]
+**Insight 3: Freight costs eat disproportionately into revenue for remote regions and heavy product categories.**
+**Findings:** Freight cost as a percentage of product price is 2× higher in northern states (AM, RR, PA) than in Sao Paulo, even for identical products. Heavy categories (furniture, electronics) have freight percentages >20% in remote areas. Despite that, sellers are heavily concentrated in Sao Paulo, forcing long, expensive shipments.
 
-**Insight 4 (if applicable): [Short descriptive headline]**
-[What you found + what it suggests.]
+**Meaning:** The current logistics model is unfair to both customers and sellers in remote regions. Olist is missing out on potential demand because shipping is prohibitively expensive and slow. Opening regional fulfilment centres (e.g., Manaus, Fortaleza) and incentivising local sellers could slash delivery times and freight costs, making those markets profitable.
+
+
+**Insight 4: Credit cards dominate, but 52% of orders use instalments and long‑term instalments carry higher default risk.**
+**Findings:** 75% of orders use credit cards, and 52% of orders are paid in instalments (1‑12+ instalments). Orders with 7+ instalments (12% of total) have 40% higher average order value but also show a higher rate of cancelled payments (as inferred from payment approval delays and cancellations). Full payment (1 instalment) accounts for 48% of orders.
+
+**Meaning:** While instalments drive higher basket sizes, they also introduce financial risk. Olist should implement tiered fraud checks: flag orders with >6 instalments, high value, and new accounts for manual review. Also, offering a small discount for full payment could improve cash flow and reduce default exposure. The data supports that most customers can afford to pay upfront – 48% already do.
 
 ---
 

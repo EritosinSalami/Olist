@@ -158,6 +158,8 @@ Visualisation & Reporting
 
  **Meaning:** Olist’s catalog is dominated by slow‑moving, low‑value items. The business relies on a few “hero” products. This creates vulnerability: if those products face stockouts or competition, overall revenue could drop significantly. Rationalising the portfolio, discontinue or discount bottom‑left products, promote heavy‑hitters, and experiment with bundling to move volume.
 
+ 
+
 
 **Insight 2: 90% of customers never return, zero repeat purchases, over‑estimated delivery days and geographic concentration.**
 
@@ -167,6 +169,8 @@ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/logistics%20pe
 
  **Meaning:** The delivery estimation algorithm is broken for short distances. Customers trust the platform but are forced to cancel when they see unrealistic long promises. The lack of repeat purchases also signals no loyalty programme, no post‑purchase engagement, and no incentive to return. Fixing the estimate logic (e.g., reduce to 3‑5 days for short distances) could recover a significant portion of lost revenue and potentially improve retention.
 
+ 
+
 
 **Insight 3: Freight costs eat disproportionately into revenue for remote regions and heavy product categories.**
 
@@ -174,6 +178,8 @@ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/logistics%20pe
 Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/logistics%20performance.png)
 
 **Meaning:** The current logistics model is unfair to both customers and sellers in remote regions. Olist is missing out on potential demand because shipping is prohibitively expensive and slow. Opening regional fulfilment centres (e.g., Manaus, Fortaleza) and incentivising local sellers could slash delivery times and freight costs, making those markets profitable.
+
+
 
 
 **Insight 4: Credit cards dominate, but 52% of orders use instalments and long‑term instalments carry higher default risk.**
@@ -226,4 +232,3 @@ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/sales%20%26%20
 ---
 
 *Last updated: [May 2026]*
-*If this template helped you, consider starring the repository.*

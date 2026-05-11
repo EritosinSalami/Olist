@@ -85,13 +85,13 @@ Specifically:
 ## 5. Data Workflow
 
 [Data Source]
-      ↓
+      >
 [Ingestion]
-      ↓
+      >
 [Cleaning & Transformation]
-      ↓
+      >
 [Analysis & Modelling]
-      ↓
+      >
 [Visualisation & Reporting]
 
 1. **Source:**  The Olist Brazilian E‑commerce dataset (publicly available on Kaggle).
@@ -109,20 +109,20 @@ Specifically:
                  **Outliers:** Flagged orders with price = 0 or negative for investigation (excluded from revenue metrics).
 
 4. **Transformation:** DeliveryDays (delivered date – purchase date)   EstDeliveryDays (estimated delivery date – purchase date)  
-                      -Distance_km (Haversine formula between seller and customer geolocations)  
-                      - Revenue R$ - InstallmentGroup (1 = “Full payment”, 2‑3 = “Short term”, 4‑6 = “Medium”, 7-12 = “Long”, 13+ = “Extended”)  
-                      - **Aggregated tables:**  
-                      - RFM table (customer‑level: Recency, Frequency, Monetary)  
-                      - SalesMonthly (revenue, orders, AOV by month)  
-                      - CategoryPerformance (revenue, units, freight % by product category)  
-                      - **Star schema:** Built Date table related to orders on order_purchase_timestamp.
+   -Distance_km (Haversine formula between seller and customer geolocations)  
+   - Revenue R$ - InstallmentGroup (1 = “Full payment”, 2‑3 = “Short term”, 4‑6 = “Medium”, 7-12 = “Long”, 13+ = “Extended”)  
+   - **Aggregated tables:**  
+   - RFM table (customer‑level: Recency, Frequency, Monetary)  
+   - SalesMonthly (revenue, orders, AOV by month)  
+   - CategoryPerformance (revenue, units, freight % by product category)  
+   - **Star schema:** Built Date table related to orders on order_purchase_timestamp.
 
 6. **Analysis:** **Exploratory Data Analysis (EDA):** Distribution plots, time series (SQL + Power BI).  
-                 - **RFM segmentation:** Ntile (Recency, Frequency, Monetary) to identify customer segments.
-                 - **Geospatial analysis:** Distance calculation to compare estimated delivery days vs. actual distance (scatter plot).  
-                 - **Statistical summaries:** Median, Ntiles, averages for delivery times, freight costs, review scores.
-                 - **Business KPI measures (DAX):**  - Total Revenue, Total Orders, AOV, OnTimeDeliveryRate, Churn Rate, Revenue per Lead, etc.  
-                 - **Hypothesis testing:** Proved that over‑estimated delivery days for short distances drive cancellations in São Paulo.
+   - **RFM segmentation:** Ntile (Recency, Frequency, Monetary) to identify customer segments.
+   - **Geospatial analysis:** Distance calculation to compare estimated delivery days vs. actual distance (scatter plot).  
+   - **Statistical summaries:** Median, Ntiles, averages for delivery times, freight costs, review scores.
+   - **Business KPI measures (DAX):**  - Total Revenue, Total Orders, AOV, OnTimeDeliveryRate, Churn Rate, Revenue per Lead, etc.  
+   - **Hypothesis testing:** Proved that over‑estimated delivery days for short distances drive cancellations in São Paulo.
 
 7. **Output:** **Interactive Power BI dashboard** (4 pages) 
   - Executive Summary (KPIs, revenue trend, top products)  

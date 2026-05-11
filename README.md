@@ -3,7 +3,7 @@
 
 ---
 
-## ⚙️ Project Type Flags
+## Project Type Flags
 
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
@@ -16,16 +16,11 @@
 1. [Project Overview](#1-project-overview)
 2. [Objectives](#2-objectives)
 3. [Project Scope & Tools](#3-project-scope--tools)
-5. [Data Workflow](#5-data-workflow)
-6. [Data Model & Schema](#6-data-model--schema)
-7. [ERD - Entity Relationship Diagram](#7-erd--entity-relationship-diagram) *(SQL projects)*
-8. [Analysis & Metrics](#8-analysis--metrics)
-9. [Key Insights](#9-key-insights)
-10. [Recommendations](#10-recommendations)
-11. [Assumptions & Limitations](#11-assumptions--limitations)
-12. [Future Enhancements](#12-future-enhancements)
-13. [Deliverables](#13-deliverables)
-14. [Author](#14-author)
+4. [Data Workflow](#4-data-workflow)
+5. [ERD - Entity Relationship Diagram](#5-erd--entity-relationship-diagram)
+6. [Key Insights](#6-key-insights)
+7. [Recommendations](#7-recommendations)
+8. [Author](#8-author)
 
 ---
 
@@ -90,7 +85,7 @@ Specifically:
 
 ---
 
-## 5. Data Workflow
+## 4. Data Workflow
 
 Data Source
       >
@@ -145,7 +140,7 @@ Visualisation & Reporting
 
 ---
 
-## 7. ERD - Entity Relationship Diagram
+## 5. ERD - Entity Relationship Diagram
 
 (https://github.com/EritosinSalami/Olist/blob/main/visuals/ERD.png)
 
@@ -153,7 +148,7 @@ Visualisation & Reporting
 
 ---
 
-## 9. Key Insights
+## 6. Key Insights
 
 **Insight 1: Revenue is volume‑driven, not price‑driven – most products are low‑price, low‑volume.**
 
@@ -190,7 +185,7 @@ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/sales%20%26%20
 
 ---
 
-## 10. Recommendations
+## 7. Recommendations
 
 <!--
   Action-oriented. Addressed to a real audience.
@@ -219,7 +214,7 @@ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/sales%20%26%20
 
 ---
 
-## 14. Author
+## 8. Author
 
 **[Eritosin Salami]**
 [Data Analyst]
@@ -230,5 +225,5 @@ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/sales%20%26%20
 
 ---
 
-*Last updated: [Month YYYY]*
+*Last updated: [May 2026]*
 *If this template helped you, consider starring the repository.*

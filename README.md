@@ -150,27 +150,31 @@ Visualisation & Reporting
 ## 9. Key Insights
 
 **Insight 1: Revenue is volume‑driven, not price‑driven – most products are low‑price, low‑volume.**
-**Findings:** A scatter plot of price vs. quantity (bubble size = total revenue) showed that the vast majority of products cluster in the bottom‑left quadrant (low price, low volume). Only a handful of products drive revenue through high volume (bottom‑right) or high price (top‑left). The top 10 products by revenue and units sold account for a disproportionate share of sales.
 
-**Meaning:** Olist’s catalog is dominated by slow‑moving, low‑value items. The business relies on a few “hero” products. This creates vulnerability: if those products face stockouts or competition, overall revenue could drop significantly. Rationalising the portfolio, discontinue or discount bottom‑left products, promote heavy‑hitters, and experiment with bundling to move volume.
+      **Findings:** A scatter plot of price vs. quantity (bubble size = total revenue) showed that the vast majority of products cluster in the bottom‑left quadrant (low price, low volume). Only a handful of products drive revenue through high volume (bottom‑right) or high price (top‑left). The top 10 products by revenue and units sold account for a disproportionate share of sales.
+
+      **Meaning:** Olist’s catalog is dominated by slow‑moving, low‑value items. The business relies on a few “hero” products. This creates vulnerability: if those products face stockouts or competition, overall revenue could drop significantly. Rationalising the portfolio, discontinue or discount bottom‑left products, promote heavy‑hitters, and experiment with bundling to move volume.
 
 
 **Insight 2: 90% of customers never return, zero repeat purchases, over‑estimated delivery days and geographic concentration.**
-**Findings:** Churn rate is 90% (customers with no purchase in the last 90 days). All customers are one‑time buyers. Cancellations in Sao Paulo (the largest market) are strongly correlated with estimated delivery days being far too high, even when the seller is geographically close. Scatter plot of distance (km) vs. estimated delivery days shows a cluster of canceled orders at short distance (<500 km) with high estimates (>15 days).
 
-**Meaning:** The delivery estimation algorithm is broken for short distances. Customers trust the platform but are forced to cancel when they see unrealistic long promises. The lack of repeat purchases also signals no loyalty programme, no post‑purchase engagement, and no incentive to return. Fixing the estimate logic (e.g., reduce to 3‑5 days for short distances) could recover a significant portion of lost revenue and potentially improve retention.
+      **Findings:** Churn rate is 90% (customers with no purchase in the last 90 days). All customers are one‑time buyers. Cancellations in Sao Paulo (the largest market) are strongly correlated with estimated delivery days being far too high, even when the seller is geographically close. Scatter plot of distance (km) vs. estimated delivery days shows a cluster of canceled orders at short distance (<500 km) with high estimates (>15 days).
+
+      **Meaning:** The delivery estimation algorithm is broken for short distances. Customers trust the platform but are forced to cancel when they see unrealistic long promises. The lack of repeat purchases also signals no loyalty programme, no post‑purchase engagement, and no incentive to return. Fixing the estimate logic (e.g., reduce to 3‑5 days for short distances) could recover a significant portion of lost revenue and potentially improve retention.
 
 
 **Insight 3: Freight costs eat disproportionately into revenue for remote regions and heavy product categories.**
-**Findings:** Freight cost as a percentage of product price is 2× higher in northern states (AM, RR, PA) than in Sao Paulo, even for identical products. Heavy categories (furniture, electronics) have freight percentages >20% in remote areas. Despite that, sellers are heavily concentrated in Sao Paulo, forcing long, expensive shipments.
 
-**Meaning:** The current logistics model is unfair to both customers and sellers in remote regions. Olist is missing out on potential demand because shipping is prohibitively expensive and slow. Opening regional fulfilment centres (e.g., Manaus, Fortaleza) and incentivising local sellers could slash delivery times and freight costs, making those markets profitable.
+      **Findings:** Freight cost as a percentage of product price is 2× higher in northern states (AM, RR, PA) than in Sao Paulo, even for identical products. Heavy categories (furniture, electronics) have freight percentages >20% in remote areas. Despite that, sellers are heavily concentrated in Sao Paulo, forcing long, expensive shipments.
+
+      **Meaning:** The current logistics model is unfair to both customers and sellers in remote regions. Olist is missing out on potential demand because shipping is prohibitively expensive and slow. Opening regional fulfilment centres (e.g., Manaus, Fortaleza) and incentivising local sellers could slash delivery times and freight costs, making those markets profitable.
 
 
 **Insight 4: Credit cards dominate, but 52% of orders use instalments and long‑term instalments carry higher default risk.**
-**Findings:** 75% of orders use credit cards, and 52% of orders are paid in instalments (1‑12+ instalments). Orders with 7+ instalments (12% of total) have 40% higher average order value but also show a higher rate of cancelled payments (as inferred from payment approval delays and cancellations). Full payment (1 instalment) accounts for 48% of orders.
 
-**Meaning:** While instalments drive higher basket sizes, they also introduce financial risk. Olist should implement tiered fraud checks: flag orders with >6 instalments, high value, and new accounts for manual review. Also, offering a small discount for full payment could improve cash flow and reduce default exposure. The data supports that most customers can afford to pay upfront – 48% already do.
+      **Findings:** 75% of orders use credit cards, and 52% of orders are paid in instalments (1‑12+ instalments). Orders with 7+ instalments (12% of total) have 40% higher average order value but also show a higher rate of cancelled payments (as inferred from payment approval delays and cancellations). Full payment (1 instalment) accounts for 48% of orders.
+
+      **Meaning:** While instalments drive higher basket sizes, they also introduce financial risk. Olist should implement tiered fraud checks: flag orders with >6 instalments, high value, and new accounts for manual review. Also, offering a small discount for full payment could improve cash flow and reduce default exposure. The data supports that most customers can afford to pay upfront – 48% already do.
 
 ---
 

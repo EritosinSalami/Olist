@@ -49,11 +49,11 @@ Specifically:
 - **Logistics:** 93% on‑time delivery but over‑estimated delivery days caused R$10,650 freight revenue loss. Sellers concentrated in Sao Paulo, leading to more than 20-day deliveries and high freight costs in remote regions.
 - **Actionable Recommendations:** Adjust delivery estimation algorithm, launch loyalty programs, rationalize product portfolio, and recruit sellers in underserved areas.
 
-  The SQL Queries used to analyze and aggregate the data for this project can be found here: Olist/queries at main · EritosinSalami/Olist
+  The SQL Queries used to analyze and aggregate the data for this project can be found here: https://github.com/EritosinSalami/Olist/tree/main/queries
 
-  Dashboard visuals can be found here: Olist/visuals at main · EritosinSalami/Olist
+  Dashboard visuals can be found here: https://github.com/EritosinSalami/Olist/tree/main/visuals
 
-  The interactive dashboard can be found here: Microsoft Power BI
+  The interactive dashboard can be found here: [Microsoft Power BI](https://app.powerbi.com/reportEmbed?reportId=9232b7ce-3c5c-4d09-9c84-1c87bcafa9d3&autoAuth=true&ctid=3a20be13-aef0-44c7-be0a-377c208f6a15)
 
 
 ---
@@ -158,8 +158,8 @@ Visualisation & Reporting
 **Insight 1: Revenue is volume‑driven, not price‑driven – most products are low‑price, low‑volume.**
 
  **Findings:** A scatter plot of price vs. quantity (bubble size = total revenue) showed that the vast majority of products cluster in the bottom‑left quadrant (low price, low volume). Only a handful of products drive revenue through high volume (bottom‑right) or high price (top‑left). The top 10 products by revenue and units sold account for a disproportionate share of sales. 
- Visuals(Olist/visuals/product performance.png at main · EritosinSalami/Olist) 
- Visuals(Olist/visuals/sales & revenue perfromance.png at main · EritosinSalami/Olist)
+ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/sales%20%26%20revenue%20perfromance.png) 
+ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/product%20performance.png)
 
  **Meaning:** Olist’s catalog is dominated by slow‑moving, low‑value items. The business relies on a few “hero” products. This creates vulnerability: if those products face stockouts or competition, overall revenue could drop significantly. Rationalising the portfolio, discontinue or discount bottom‑left products, promote heavy‑hitters, and experiment with bundling to move volume.
 
@@ -167,8 +167,8 @@ Visualisation & Reporting
 **Insight 2: 90% of customers never return, zero repeat purchases, over‑estimated delivery days and geographic concentration.**
 
 **Findings:** Churn rate is 90% (customers with no purchase in the last 90 days). All customers are one‑time buyers. Cancellations in Sao Paulo (the largest market) are strongly correlated with estimated delivery days being far too high, even when the seller is geographically close. Scatter plot of distance (km) vs. estimated delivery days shows a cluster of canceled orders at short distance (<500 km) with high estimates (>15 days).
-Visuals(Olist/visuals/customer behaviour.png at main · EritosinSalami/Olist)
-Visuals(Olist/visuals/logistics performance.png at main · EritosinSalami/Olist)
+Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/customer%20behaviour.png)
+Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/logistics%20performance.png)
 
  **Meaning:** The delivery estimation algorithm is broken for short distances. Customers trust the platform but are forced to cancel when they see unrealistic long promises. The lack of repeat purchases also signals no loyalty programme, no post‑purchase engagement, and no incentive to return. Fixing the estimate logic (e.g., reduce to 3‑5 days for short distances) could recover a significant portion of lost revenue and potentially improve retention.
 
@@ -176,7 +176,7 @@ Visuals(Olist/visuals/logistics performance.png at main · EritosinSalami/Olist)
 **Insight 3: Freight costs eat disproportionately into revenue for remote regions and heavy product categories.**
 
 **Findings:** Freight cost as a percentage of product price is 2× higher in northern states (AM, RR, PA) than in Sao Paulo, even for identical products. Heavy categories (furniture, electronics) have freight percentages >20% in remote areas. Despite that, sellers are heavily concentrated in Sao Paulo, forcing long, expensive shipments.
-Visuals(Olist/visuals/logistics performance.png at main · EritosinSalami/Olist)
+Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/logistics%20performance.png)
 
 **Meaning:** The current logistics model is unfair to both customers and sellers in remote regions. Olist is missing out on potential demand because shipping is prohibitively expensive and slow. Opening regional fulfilment centres (e.g., Manaus, Fortaleza) and incentivising local sellers could slash delivery times and freight costs, making those markets profitable.
 
@@ -184,7 +184,7 @@ Visuals(Olist/visuals/logistics performance.png at main · EritosinSalami/Olist)
 **Insight 4: Credit cards dominate, but 52% of orders use instalments and long‑term instalments carry higher default risk.**
 
 **Findings:** 75% of orders use credit cards, and 52% of orders are paid in instalments (1‑12+ instalments). Orders with 7+ instalments (12% of total) have 40% higher average order value but also show a higher rate of cancelled payments (as inferred from payment approval delays and cancellations). Full payment (1 instalment) accounts for 48% of orders.
-Visuals(Olist/visuals/sales & revenue perfromance.png at main · EritosinSalami/Olist)
+Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/sales%20%26%20revenue%20perfromance.png)
 
 **Meaning:** While instalments drive higher basket sizes, they also introduce financial risk. Olist should implement tiered fraud checks: flag orders with >6 instalments, high value, and new accounts for manual review. Also, offering a small discount for full payment could improve cash flow and reduce default exposure. The data supports that most customers can afford to pay upfront – 48% already do.
 

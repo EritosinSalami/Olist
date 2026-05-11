@@ -86,46 +86,56 @@ Specifically:
 
 ## 5. Data Workflow
 
-<!--
-  Show how data moved through your project - from source to output.
-  Every transformation decision should be traceable here.
-
-  WHAT GOOD LOOKS LIKE:
-  1. Source: "Monthly CSV exports pulled from the internal POS system.
-              Five files, one per region, covering Jan 2023–Jun 2024."
-  2. Ingestion: "Loaded into Python using pandas. Files concatenated into
-                 a single dataframe (approx. 340,000 rows)."
-  3. Cleaning: "Removed 1.2% of rows with null transaction IDs.
-                Standardised date formats across regional files.
-                Resolved product category naming inconsistencies (3 variants → 1)."
-  4. Transformation: "Created a returns_rate field at product-category level.
-                      Aggregated to weekly and regional grain for trend analysis."
-  5. Analysis: "Descriptive statistics, regional comparison, return rate
-                segmentation by product category."
-  6. Output: "Summary report (PDF), annotated notebook, processed CSV."
-
-  WHAT TO AVOID:
-  ❌ "Data was cleaned and analysed." (No chain. No decisions. No trust.)
--->
-
-```
-[Data Source(s)]
+[Data Source]
       ↓
-[Ingestion / Collection Method]
+[Ingestion]
       ↓
 [Cleaning & Transformation]
       ↓
-[Analysis / Modelling / Querying]
+[Analysis & Modelling]
       ↓
-[Output / Visualisation / Reporting]
-```
+[Visualisation & Reporting]
 
-1. **Source:** [Where did the data come from? Format, size, access method.]
-2. **Ingestion:** [How was it brought in?]
-3. **Cleaning:** [What issues did you find and fix?]
-4. **Transformation:** [What new fields, aggregations, or structures did you create?]
-5. **Analysis:** [What methods - statistical, visual, query-based, model-based?]
-6. **Output:** [What form do the results take?]
+1. **Source:**  The Olist Brazilian E‑commerce dataset (publicly available on Kaggle).  **Format:** 9 interconnected CSV files.
+                **Tables used:** orders, order_items, products, customers, sellers, geolocation, order_payments, order_reviews,`marketing_qualified_leads, closed_deals.  
+                **Time period:** September 2016 – October 2018.
+
+3. **Ingestion:** **CSV → SQL:** CSV files were imported into MySQL Workbench using `LOAD IMPORT WIZARD`.  
+                  Also loaded into Power BI via “Get Data → Text/CSV” 
+
+4. **Cleaning:** **Missing dates:** Replaced `"NULL"` with `n/a` in delivery date columns.  
+                 **Data types:** Converted `price`, `freight_value`, `payment_value` to `DECIMAL`; date columns to `DATETIME`.  
+                 **Duplicates:** Removed duplicate order rows.  
+                 **Null categories:** Filled empty `product_category_name` with `"n/a"`.  
+                 **Outliers:** Flagged orders with `price` = 0 or negative for investigation (excluded from revenue metrics).
+
+5. **Transformation:** `DeliveryDays` (delivered date – purchase date)   `EstDeliveryDays` (estimated delivery date – purchase date)  
+                      - `Distance_km` (Haversine formula between seller and customer geolocations)  
+                      - `Revenue R$` - `InstallmentGroup` (1 = “Full payment”, 2‑3 = “Short term”, 4‑6 = “Medium”, 7+ = “Long”)  
+                      - **Aggregated tables:**  
+                      - `RFM` table (customer‑level: Recency, Frequency, Monetary)  
+                      - `SalesMonthly` (revenue, orders, AOV by month)  
+                      - `CategoryPerformance` (revenue, units, freight % by product category)  
+                      - **Star schema:** Built `Date` table related to `orders` on `order_purchase_timestamp`.
+
+6. **Analysis:** **Exploratory Data Analysis (EDA):** Distribution plots, time series (SQL + Power BI).  
+                 - **RFM segmentation:** Ntile (Recency, Frequency, Monetary) to identify customer segments.
+                 - **Geospatial analysis:** Distance calculation to compare estimated delivery days vs. actual distance (scatter plot).  
+                 - **Statistical summaries:** Median, Ntiles, averages for delivery times, freight costs, review scores.
+                 - **Business KPI measures (DAX):**  - `Total Revenue`, `Total Orders`, `AOV`, `OnTimeDeliveryRate`, `Churn Rate`, `Revenue per Lead`, etc.  
+                 - **Hypothesis testing:** Proved that over‑estimated delivery days for short distances drive cancellations in São Paulo.
+
+7. **Output:** **Interactive Power BI dashboard** (4 pages):  
+  - Executive Summary (KPIs, revenue trend, top products)  
+  - Sales & Revenue (monthly / yearly, category, region)  
+  - Customer Behaviour (RFM segments, churn rate, conversion funnel)  
+  - Product Performance (price vs. volume matrix, review scores)  
+  - Logistics & Delivery (on‑time rate, map of delivery days, freight % by region/category)  
+  - Payment & Marketing (payment distribution, conversion rate by channel, revenue per lead)  
+  - **SQL scripts** (GitHub) – all queries used for extraction, cleaning, and analysis.  
+  - **Executable DAX measures** (ready to copy into any Power BI model).  
+  - **This documentation** – complete pipeline, findings, and recommendations.
+
 
 ---
 

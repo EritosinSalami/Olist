@@ -143,7 +143,7 @@ Visualisation & Reporting
 
 (https://github.com/EritosinSalami/Olist/blob/main/visuals/ERD.png)
 
-**Core schema of the Olist dataset** – orders as the central fact table connected to customers, payments, reviews, and order items, which join to products and sellers. Geolocation links to customers and sellers via zip codes. Marketing leads join to closed deals.
+**Core schema of the Olist dataset** – orders as the central fact table (99,441 records) connected to customers, payments, reviews, and order items, which join to products and sellers. Geolocation links to customers and sellers via zip codes. Marketing leads join to closed deals.
 
 ---
 

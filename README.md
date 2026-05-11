@@ -84,15 +84,15 @@ Specifically:
 
 ## 5. Data Workflow
 
-[Data Source]
+Data Source
       >
-[Ingestion]
+Ingestion
       >
-[Cleaning & Transformation]
+Cleaning & Transformation
       >
-[Analysis & Modelling]
+Analysis & Modelling
       >
-[Visualisation & Reporting]
+Visualisation & Reporting
 
 1. **Source:**  The Olist Brazilian E‑commerce dataset (publicly available on Kaggle).
                  **Format:** 9 interconnected CSV files.
@@ -138,7 +138,8 @@ Specifically:
 ## 7. ERD - Entity Relationship Diagram
 
 (https://github.com/EritosinSalami/Olist/blob/main/visuals/ERD.png)
-*Core schema of the Olist dataset – orders as the central fact table connected to customers, payments, reviews, and order items, which join to products and sellers. Geolocation links to customers and sellers via zip codes. Marketing leads join to closed deals.*
+
+**Core schema of the Olist dataset** – orders as the central fact table connected to customers, payments, reviews, and order items, which join to products and sellers. Geolocation links to customers and sellers via zip codes. Marketing leads join to closed deals.
 
 ## 8. Analysis & Metrics
 

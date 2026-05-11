@@ -117,14 +117,14 @@ Specifically:
    - CategoryPerformance (revenue, units, freight % by product category)  
    - **Star schema:** Built Date table related to orders on order_purchase_timestamp.
 
-6. **Analysis:** **Exploratory Data Analysis (EDA):** Distribution plots, time series (SQL + Power BI).  
+5. **Analysis:** **Exploratory Data Analysis (EDA):** Distribution plots, time series (SQL + Power BI).  
    - **RFM segmentation:** Ntile (Recency, Frequency, Monetary) to identify customer segments.
    - **Geospatial analysis:** Distance calculation to compare estimated delivery days vs. actual distance (scatter plot).  
    - **Statistical summaries:** Median, Ntiles, averages for delivery times, freight costs, review scores.
    - **Business KPI measures (DAX):**  - Total Revenue, Total Orders, AOV, OnTimeDeliveryRate, Churn Rate, Revenue per Lead, etc.  
    - **Hypothesis testing:** Proved that over‑estimated delivery days for short distances drive cancellations in São Paulo.
 
-7. **Output:** **Interactive Power BI dashboard** (4 pages) 
+6. **Output:** **Interactive Power BI dashboard** (4 pages) 
   - Executive Summary (KPIs, revenue trend, top products)  
   - Sales & Revenue (monthly / yearly, category, region)  
   - Customer Behaviour (RFM segments, churn rate, conversion funnel)  
@@ -135,63 +135,10 @@ Specifically:
   - **Executable DAX measures** (ready to copy into any Power BI model).  
   - **This documentation** – complete pipeline, findings, and recommendations.
 
-
-## 6. Data Model & Schema
-
-<!--
-  Define your fields so that someone reading your analysis can follow along
-  without digging through your code.
-
-  WHAT GOOD LOOKS LIKE (one row example):
-  | transaction_id | string | Unique identifier per sales transaction | TXN-00482 |
-  | return_flag    | boolean | Whether the transaction included a return | TRUE |
-  | region_code    | string | Two-letter identifier for store region | "NE" |
-
-  WHAT TO AVOID:
-  ❌ Skipping this section because "the field names are self-explanatory."
-     They're not. Not to a reviewer. Not to you in six months.
-
-  📌 FOR SQL PROJECTS: If you have multiple tables, create one block per table.
-     Describe join keys and relationships here. Your ERD (Section 7) will
-     visualise what this section describes in text.
-
-  📌 FOR NON-SQL PROJECTS: Describe the shape of your dataset informally
-     if a formal schema doesn't apply. Even one paragraph is more helpful than nothing.
--->
-
-### Dataset / Table: `[name]`
-
-| Field Name | Data Type | Description | Example Value |
-|------------|-----------|-------------|---------------|
-| `[field_1]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-| `[field_2]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-| `[field_3]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-
-> **Row count (approx.):** [X rows]
-> **Date range:** [Start] – [End]
-> **Key join / relationship:** [e.g., `orders.customer_id` → `customers.id`]
-
-*Add additional table blocks as needed for multi-table projects.*
-
----
-
 ## 7. ERD - Entity Relationship Diagram
 
-### Option A - Embedded Image
 (https://github.com/EritosinSalami/Olist/blob/main/visuals/ERD.png)
-*[Brief caption: e.g., "Three-table schema - orders, customers, and products joined on shared IDs."]*
-
----
-
-**Table Relationships Summary:**
-
-| Relationship | Join Key | Type |
-|-------------|----------|------|
-| `orders` → `customers` | `customer_id` | Many-to-One |
-| `orders` → `products` | `product_id` | Many-to-One |
-| [Add rows as needed] | | |
-
----
+*Core schema of the Olist dataset – orders as the central fact table connected to customers, payments, reviews, and order items, which join to products and sellers. Geolocation links to customers and sellers via zip codes. Marketing leads join to closed deals.*
 
 ## 8. Analysis & Metrics
 

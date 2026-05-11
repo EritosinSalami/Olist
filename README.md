@@ -219,18 +219,6 @@ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/sales%20%26%20
 
 ---
 
-
-
-## 13. Deliverables
-
-| Deliverable | Description | Location |
-|-------------|-------------|----------|
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
-
----
-
 ## 14. Author
 
 **[Eritosin Salami]**

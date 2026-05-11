@@ -97,18 +97,18 @@ Analysis & Modelling
 Visualisation & Reporting
 
 1. **Source:**  The Olist Brazilian E‑commerce dataset (publicly available on Kaggle).
-                 **Format:** 9 interconnected CSV files.
-                **Tables used:** orders, order_items, products, customers, sellers, geolocation, order_payments, order_reviews, marketing_qualified_leads, closed_deals.  
-                **Time period:** September 2016 – October 2018.
+   **Format:** 9 interconnected CSV files.
+   **Tables used:** orders, order_items, products, customers, sellers, geolocation, order_payments, order_reviews, marketing_qualified_leads, closed_deals.  
+   **Time period:** September 2016 – October 2018.
 
 2. **Ingestion:** **CSV → SQL:** CSV files were imported into MySQL Workbench using LOAD IMPORT WIZARD.  
                   Also loaded into Power BI via “Get Data → Text/CSV” 
 
 3. **Cleaning:** **Missing dates:** Replaced `"NULL"` with `n/a` in delivery date columns.  
-                 **Data types:** Converted price, freight_value, payment_value to DECIMAL; date columns to DATETIME.  
-                 **Duplicates:** Removed duplicate order rows.  
-                 **Null categories:** Filled empty product_category_name with `"n/a"`.  
-                 **Outliers:** Flagged orders with price = 0 or negative for investigation (excluded from revenue metrics).
+   **Data types:** Converted price, freight_value, payment_value to DECIMAL; date columns to DATETIME.  
+   **Duplicates:** Removed duplicate order rows.  
+   **Null categories:** Filled empty product_category_name with `"n/a"`.  
+   **Outliers:** Flagged orders with price = 0 or negative for investigation (excluded from revenue metrics).
 
 4. **Transformation:** DeliveryDays (delivered date – purchase date)   EstDeliveryDays (estimated delivery date – purchase date)  
    -Distance_km (Haversine formula between seller and customer geolocations)  

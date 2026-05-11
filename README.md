@@ -97,7 +97,6 @@ Analysis & Modelling
 Visualisation & Reporting
 
 1. **Source:**  The Olist Brazilian E‑commerce dataset (publicly available on Kaggle).
-   
                  **Format:** 9 interconnected CSV files.
                 **Tables used:** orders, order_items, products, customers, sellers, geolocation, order_payments, order_reviews, marketing_qualified_leads, closed_deals.  
                 **Time period:** September 2016 – October 2018.

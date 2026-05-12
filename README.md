@@ -163,11 +163,11 @@ Visualisation & Reporting
 
 **Insight 2: 90% of customers never return, zero repeat purchases, over‑estimated delivery days and geographic concentration.**
 
-**Findings:** Churn rate is 90% (customers with no purchase in the last 90 days). All customers are one‑time buyers. Cancellations in Sao Paulo (the largest market) are strongly correlated with estimated delivery days being far too high, even when the seller is geographically close. Scatter plot of distance (km) vs. estimated delivery days shows a cluster of canceled orders at short distance (<500 km) with high estimates (>15 days).
+**Findings:** Churn rate is 90% (customers with no purchase in the last 90 days). All customers are one‑time buyers and most of the converted leads from the total leads generated (B2B customers) were from an unknown channel (16.65%) . Cancellations in Sao Paulo (the largest market) are strongly correlated with estimated delivery days being far too high, even when the seller is geographically close. Scatter plot of distance (km) vs. estimated delivery days shows a cluster of canceled orders at short distance (<500 km) with high estimates (>15 days) which cost the Brazilian e-commerce R$95,235 in potential revenue.
 Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/customer%20behaviour.png)
 Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/logistics%20performance.png)
 
- **Meaning:** The delivery estimation algorithm is broken for short distances. Customers trust the platform but are forced to cancel when they see unrealistic long promises. The lack of repeat purchases also signals no loyalty programme, no post‑purchase engagement, and no incentive to return. Fixing the estimate logic (e.g., reduce to 3‑5 days for short distances) could recover a significant portion of lost revenue and potentially improve retention.
+ **Meaning:** The delivery estimation algorithm is broken for short distances. Customers trust the platform but are forced to cancel when they see unrealistic long promises. The lack of repeat purchases also signals no loyalty programme, no post‑purchase engagement, and no incentive to return. Fixing the estimate logic (e.g., reduce to 3‑5 days for short distances) could recover a significant portion of lost revenue and potentially improve retention. Also, add tracking parameters to uncover real source of generated leads for optimization
 
  
 

@@ -152,7 +152,7 @@ Visualisation & Reporting
 
 **Insight 1: Revenue is volume‑driven, not price‑driven – most products are low‑price, low‑volume.**
 
- **Findings:** A scatter plot of price vs. quantity (bubble size = total revenue) showed that the vast majority of products cluster in the bottom‑left quadrant (low price, low volume). Only a handful of products drive revenue through high volume (bottom‑right) or high price (top‑left). The top 10 products by revenue and units sold account for a disproportionate share of sales. 
+ **Findings:** A scatter plot of price vs. quantity (bubble size = total revenue) showed that the vast majority of products cluster in the bottom‑left quadrant (low price, low volume). Only a handful of products drive revenue through high volume (bottom‑right) or high price (top‑left). The top 10 products by revenue and units sold account for a disproportionate share of sales (Health_Beauty, Watches_Gifts, Bed_Bath_Table, Sports_Leisure, Computer_Accessories, Furniture_Decor, Cool_Stuff, Housewares, Auto, Garden_Tools). 
  Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/sales%20%26%20revenue%20perfromance.png) 
  Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/product%20performance.png)
 

@@ -194,23 +194,23 @@ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/sales%20%26%20
 ## 7. Recommendations
 
 **1. Sales & Product Strategy**
--Since	customers are more inclined towards not too cost and not too cheap products hence, the top performing products being volume based. Promote top‑performing products by Featuring the 10 revenue‑driving Stock Keeping Units on homepage and in retargeting campaigns to stabilize and increase revenue. 
--Rationalize the catalog; Discontinue or discount bottom‑left quadrant products (low price, low volume) to reduce inventory costs and simplify operations. 
+- Since	customers are more inclined towards not too cost and not too cheap products hence, the top performing products being volume based. Promote top‑performing products by Featuring the 10 revenue‑driving Stock Keeping Units on homepage and in retargeting campaigns to stabilize and increase revenue. 
+- Rationalize the catalog; Discontinue or discount bottom‑left quadrant products (low price, low volume) to reduce inventory costs and simplify operations. 
 
 **2. Customer Retention & Churn Reduction**
 
--Though, the e-comm brand always acquire more customers which increases its revenue yearly but it struggles with one-time buyers and most of the products have a long replacement cycle. Launch a loyalty program to encourage repeat purchase and post-purchase email sequence can also be established to keep the brand on the top of mind
--Fix delivery estimation algorithm for short distances by reducing the estimates from 10–15 days to 5–7 days. This directly addresses the main reason for cancellations in São Paulo. It would help recover lost freight revenue and lower cancellations.
+- Though, the e-comm brand always acquire more customers which increases its revenue yearly but it struggles with one-time buyers and most of the products have a long replacement cycle. Launch a loyalty program to encourage repeat purchase and post-purchase email sequence can also be established to keep the brand on the top of mind
+- Fix delivery estimation algorithm for short distances by reducing the estimates from 10–15 days to 5–7 days. This directly addresses the main reason for cancellations in São Paulo. It would help recover lost freight revenue and lower cancellations.
 
-3. Logistics & Freight Optimization
-Open regional fulfilment centres; Pilot in Manaus (Amazonas) and Fortaleza (Ceará) to serve the North and Northeast. It would cut delivery time from >20 days to <7 days, reduce freight cost %. 
-Recruit sellers in underserved states to reduce average distance per order and improve delivery speed. some of the distant regions make more purchase.
+**3. Logistics & Freight Optimization**
+- Open regional fulfilment centres; Pilot in Manaus (Amazonas) and Fortaleza (Ceará) to serve the North and Northeast. It would cut delivery time from >20 days to <7 days, reduce freight cost %. 
+- Recruit sellers in underserved states to reduce average distance per order and improve delivery speed. some of the distant regions make more purchase.
 
-4. Payment & Risk Management
-Offer a small discount for full payment (1-2%) to Incentivize customers to pay upfront, improve cash flow and reduce default risk. 
+**4. Payment & Risk Management**
+- Offer a small discount for full payment (1-2%) to Incentivize customers to pay upfront, improve cash flow and reduce default risk. 
 
-5. Marketing & Lead Conversion
-Shuffling between two channel is what is best but the best performing channel is unknown. Investigate the “unknown” channel by adding a tracking parameter to all marketing campaigns to identify the source that currently drives 16% conversion (the highest) and scale the best‑performing channel while it substitutes with Paid search (12%) and can as well replace with Organic search (11%) to reduce cost of marketing.
+**5. Marketing & Lead Conversion**
+- Shuffling between two channel is what is best but the best performing channel is unknown. Investigate the “unknown” channel by adding a tracking parameter to all marketing campaigns to identify the source that currently drives 16% conversion (the highest) and scale the best‑performing channel while it substitutes with Paid search (12%) and can as well replace with Organic search (11%) to reduce cost of marketing.
 
 ---
 

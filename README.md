@@ -48,7 +48,7 @@ Specifically:
 
   Dashboard visuals can be found here: https://github.com/EritosinSalami/Olist/tree/main/visuals
 
-  The interactive dashboard can be found here: [Microsoft Power BI](https://app.powerbi.com/reportEmbed?reportId=9232b7ce-3c5c-4d09-9c84-1c87bcafa9d3&autoAuth=true&ctid=3a20be13-aef0-44c7-be0a-377c208f6a15)
+  The interactive dashboard can be found here: [Microsoft Power BI](https://tinyurl.com/mu4t7sj9)
 
 
 ---

@@ -210,7 +210,7 @@ Visuals(https://github.com/EritosinSalami/Olist/blob/main/visuals/sales%20%26%20
 - Offer a small discount for full payment (1-2%) to Incentivize customers to pay upfront, improve cash flow and reduce default risk. 
 
 **5. Marketing & Lead Conversion**
-- Shuffling between two channel is what is best but the best performing channel is unknown. Investigate the “unknown” channel by adding a tracking parameter to all marketing campaigns to identify the source that currently drives 16% conversion (the highest) and scale the best‑performing channel while it substitutes with Paid search (12%) and can as well replace with Organic search (11%) to reduce cost of marketing.
+- Shuffling between two channel is what is best but the best performing channel is unknown. The “unknown” channel should be investigated by adding a tracking parameter to all marketing campaigns to identify the source that currently drives 16% conversion (the highest) and scale the best‑performing channel while it substitutes with Paid search (12%) and can as well replace with Organic search (11%) to reduce cost of marketing.
 
 ---
 

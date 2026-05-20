@@ -1,4 +1,4 @@
-# [Olist E-Commerce Performance Analytics]
+# [Olist E-Commerce Performance Analysis]
 > *Uncovering the Drivers of Revenue, Customer Churn, and Logistics Inefficiencies to Drive Data‑Informed Business Decisions.*
 
 ---
